@@ -5,7 +5,6 @@ import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterF
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
 
 object ServiceInstance {
@@ -29,5 +28,7 @@ object ServiceInstance {
 
     val discoverApi: DiscoverService = retrofit.create(DiscoverService::class.java)
 
-    val searchApi: SearchService = retrofit.create(SearchService::class.java)
+//    val searchApi: SearchService = retrofit.create(SearchService::class.java)
+
+    val genreApi: GenreService = retrofit.create(GenreService::class.java)
 }

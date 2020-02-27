@@ -5,7 +5,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface DiscoverService {
-    @GET("/discover/movie")
+    @GET("discover/movie")
     suspend fun getDiscoverList(
         @Query ("sort_by") sort_by: String
     ): DiscoverResponse
